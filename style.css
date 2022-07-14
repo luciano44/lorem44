@@ -1,0 +1,154 @@
+@import url("./animations.css");
+
+body {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1000px;
+  padding: 0 25px;
+  background-image: url("/img/bg.svg");
+  background-repeat: no-repeat;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body > * {
+  margin-bottom: 25px;
+}
+
+.logo {
+  margin: 50px 0;
+}
+h1,
+logo,
+.input-wrapper {
+  filter: drop-shadow(0 0 3px hsla(191, 100%, 30%, 0.75));
+}
+p,
+h1 {
+  color: white;
+}
+h1 {
+  text-align: center;
+  font-family: "Kodchasan", sans-serif;
+  font-size: 32px;
+}
+form {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+form > * {
+  margin: 6px;
+}
+form .input-wrapper {
+  flex: 4 1 200px;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+}
+form .input-wrapper p {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+form button {
+  flex: 1 1 200px;
+}
+input {
+  text-align: center;
+  width: 100%;
+  border: none;
+  height: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+input:focus {
+  outline: none;
+}
+input,
+button {
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+}
+button {
+  font-size: 16px;
+  background-color: #39dbff;
+  color: #333;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+button:hover {
+  filter: drop-shadow(0 0 15px hsla(191, 100%, 61%, 0.5)) brightness(1.1);
+}
+
+.copy {
+  color: #39dbff;
+  background: transparent;
+  border: 2px solid #39dbff;
+  padding: 0 80px;
+  width: fit-content;
+  margin-left: auto;
+  max-width: 100%;
+}
+
+img {
+  margin-right: 15px;
+}
+
+.paragraphs {
+  text-indent: 15px;
+}
+
+.paragraphs p {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 15px;
+}
+
+.toast {
+  left: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+.toast p {
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -50px;
+  /* right: 50%; */
+  left: 50%;
+  width: fit-content;
+  position: absolute;
+  color: rgba(255, 255, 255, 1);
+  padding: 5px 30px;
+  border-radius: 10px;
+  display: flex;
+
+  animation: showToast 2.3s forwards ease-out;
+}
+
+.toast p span {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  animation: bye 0.25s infinite ease-in-out alternate-reverse;
+}

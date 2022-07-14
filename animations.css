@@ -1,0 +1,96 @@
+@keyframes bye {
+  to {
+    transform: rotate(30deg);
+  }
+}
+@keyframes bye {
+  to {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes showToast {
+  0% {
+    top: 0px;
+    right: 50%;
+    left: 50%;
+    transform: rotate(0deg) translateX(-50%);
+  }
+  5% {
+    top: 30px;
+    right: 50%;
+    left: 50%;
+  }
+  10% {
+    top: 25px;
+    right: 50%;
+    left: 50%;
+  }
+  90% {
+    top: 25px;
+    right: 50%;
+    left: 50%;
+    transform: rotate(0deg) translateX(-50%);
+  }
+  95% {
+    top: 25px;
+    right: 60%;
+    left: 40%;
+    transform: rotate(10deg) translateX(-50%);
+  }
+  100% {
+    top: 25px;
+    right: -100vw;
+    left: 100vw;
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes disappearToast {
+  to {
+    top: 25px;
+  }
+}
+
+@keyframes showToast {
+  0% {
+    top: 0px;
+    right: 50%;
+    left: 50%;
+    transform: rotate(0deg) translateX(-50%);
+  }
+  5% {
+    top: 40px;
+    right: 50%;
+    left: 50%;
+  }
+  10% {
+    top: 25px;
+    right: 50%;
+    left: 50%;
+  }
+  90% {
+    top: 25px;
+    right: 50%;
+    left: 50%;
+    transform: rotate(0deg) translateX(-50%);
+  }
+  95% {
+    top: 0px;
+    right: 50%;
+    left: 50%;
+    transform: rotate(-10deg) translateX(-50%);
+  }
+  100% {
+    top: 50px;
+    right: -100vw;
+    left: 100vw;
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes disappearToast {
+  to {
+    top: 25px;
+  }
+}

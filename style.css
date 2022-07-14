@@ -22,6 +22,8 @@ body > * {
 }
 
 .logo {
+  width: 180px;
+  height: 43px;
   margin: 50px 0;
 }
 h1,
@@ -52,12 +54,13 @@ form .input-wrapper {
   border-radius: 12px;
   display: flex;
 }
-form .input-wrapper p {
+form .input-wrapper label {
   height: 100%;
   display: flex;
+  font-weight: lighter;
   align-items: center;
   padding: 0 15px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.8);
 }
 form button {
   flex: 1 1 200px;
